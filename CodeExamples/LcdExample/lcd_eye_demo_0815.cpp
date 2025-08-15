@@ -808,14 +808,14 @@ int main() {
     while (true) {
         std::cout << "\n--- 第 " << ++animation_cycle << " 轮动画 ---" << std::endl;
         
-        // animate_happy_face(&frame_data_left, &frame_data_right, temp_buffer_left, temp_buffer_right);
-        // std::this_thread::sleep_for(std::chrono::seconds(2));
+        animate_happy_face(&frame_data_left, &frame_data_right, temp_buffer_left, temp_buffer_right);
+        std::this_thread::sleep_for(std::chrono::seconds(2));
         
-        // animate_idle_blink(&frame_data_left, &frame_data_right, temp_buffer_left, temp_buffer_right);
-        // std::this_thread::sleep_for(std::chrono::seconds(1));
+        animate_idle_blink(&frame_data_left, &frame_data_right, temp_buffer_left, temp_buffer_right);
+        std::this_thread::sleep_for(std::chrono::seconds(1));
         
-        // animate_sad_face(&frame_data_left, &frame_data_right, temp_buffer_left, temp_buffer_right);
-        // std::this_thread::sleep_for(std::chrono::seconds(2));
+        animate_sad_face(&frame_data_left, &frame_data_right, temp_buffer_left, temp_buffer_right);
+        std::this_thread::sleep_for(std::chrono::seconds(2));
         
         animate_angry_face(&frame_data_left, &frame_data_right, temp_buffer_left, temp_buffer_right);
         std::this_thread::sleep_for(std::chrono::seconds(2));
